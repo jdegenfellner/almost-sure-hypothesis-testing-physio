@@ -1,5 +1,7 @@
 # Almost sure hypothesis testing in physiotherapy
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22673179.svg)](https://doi.org/10.5281/zenodo.22673179)
+
 Code and derived data reproducing every number, table and figure of
 
 > Degenfellner J. *Moving the goalposts on purpose: almost sure hypothesis
