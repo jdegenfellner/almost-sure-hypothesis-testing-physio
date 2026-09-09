@@ -1,0 +1,26 @@
+{
+  "title": "Almost sure hypothesis testing in physiotherapy: code and derived data",
+  "description": "<p>Code and derived data reproducing every number, table and figure of &ldquo;Moving the goalposts on purpose: almost sure hypothesis testing and what it would do to physiotherapy trials&rdquo;.</p><p>Almost sure hypothesis testing lets the significance level shrink with the sample size, &alpha;<sub>n</sub> = n<sup>&minus;p</sup> with p &gt; 1, so that with probability one only finitely many errors of either kind occur (Naaman, <em>Electron J Stat</em> 2016;10:1526&ndash;50). This archive applies that rule to three open-access physiotherapy trials spanning n = 140 to 2249, to the primary outcome of 21 trials with openly deposited individual participant data, and to 256 musculoskeletal trials reanalysed from published summary statistics.</p><p><code>Rscript run_all.R</code> reproduces all of it in about 15 seconds and needs only base R plus readxl. Third-party data are not redistributed: the Bleakley et al. supplement is CC BY-NC-ND and is downloaded on first run, and the 21 deposits are named by resolvable link in <code>data/ipd_reference_specs.csv</code>, since ten of them carry no licence permitting redistribution.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Degenfellner, Jürgen",
+      "orcid": "0000-0001-6886-4583",
+      "affiliation": "ZHAW Zurich University of Applied Sciences, Institute of Physiotherapy, Winterthur, Switzerland"
+    }
+  ],
+  "keywords": [
+    "statistical significance",
+    "p-values",
+    "hypothesis testing",
+    "Jeffreys-Lindley paradox",
+    "physiotherapy",
+    "research methods",
+    "reanalysis",
+    "open data",
+    "reproducible research"
+  ],
+  "language": "eng"
+}

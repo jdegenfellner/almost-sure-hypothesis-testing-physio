@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "Almost sure hypothesis testing in physiotherapy: code and derived data"
+type: software
+license: MIT
+authors:
+  - family-names: Degenfellner
+    given-names: Jürgen
+    orcid: "https://orcid.org/0000-0001-6886-4583"
+    affiliation: "ZHAW Zurich University of Applied Sciences, Institute of Physiotherapy, Winterthur, Switzerland"
+repository-code: "https://github.com/jdegenfellner/almost-sure-hypothesis-testing-physio"
+keywords:
+  - statistical significance
+  - p-values
+  - hypothesis testing
+  - Jeffreys-Lindley paradox
+  - physiotherapy
+  - reproducible research

@@ -10,6 +10,7 @@
 
 steps <- c(
   "R/00_export_ipd_reference_specs.R",  # optional; refits the IPD from raw deposits
+  "R/09_thresholds.R",                  # Table 1
   "R/06_lil_figure.R",                  # Figure 1
   "R/asht_simulation.R",                # Figure 2 (slow: 150 paths to n = 1e6)
   "R/02_finite_sample.R",               # Table 2, Table 3, Figure 3

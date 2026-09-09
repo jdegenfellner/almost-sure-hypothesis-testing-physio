@@ -1,0 +1,21 @@
+=== Table 1: rejection threshold on |z| by total sample size ===
+
+       n  classical  alpha p=1.2  z p=1.2    alpha p=2    z p=2
+      20       1.96       0.0275     2.20       0.0025     3.02
+      40       1.96        0.012     2.51     0.000625     3.42
+     100       1.96      0.00398     2.88       0.0001     3.89
+     200       1.96      0.00173     3.13      2.5e-05     4.21
+    1000       1.96     0.000251     3.66        1e-06     4.89
+    4000       1.96     4.76e-05     4.07     6.25e-08     5.41
+
+--- check against Naaman's Table 1, two-sided, Eq. (3.5) = n^(-6/5) ---
+n =      10   Naaman 1.86   recomputed 1.86   match
+n =     100   Naaman 2.88   recomputed 2.88   match
+n =    1000   Naaman 3.66   recomputed 3.66   match
+n =   1e+06   Naaman 5.41   recomputed 5.41   match
+
+--- where the almost sure level crosses the fixed 0.05 and 0.005 ---
+p = 1.1: exceeds 0.05 below n =  15.2;  falls below 0.005 above n =  123.6
+p = 1.2: exceeds 0.05 below n =  12.1;  falls below 0.005 above n =   82.7
+p = 1.5: exceeds 0.05 below n =   7.4;  falls below 0.005 above n =   34.2
+p = 2  : exceeds 0.05 below n =   4.5;  falls below 0.005 above n =   14.1
