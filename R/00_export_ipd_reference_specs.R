@@ -45,6 +45,16 @@ ref <- merge(ref, sl[, c("pmcid", "year", "journal", "title", "doi", "data_urls"
 ref <- merge(ref, reg[, c("study_id", "outcome_var", "notes")],
              by = "study_id", all.x = TRUE)
 
+# Deposit links as directly resolvable URLs: bare DOIs get a resolver prefix,
+# bare hostnames get a scheme, and temporary Dryad peer-review links are dropped.
+ref$data_urls <- vapply(strsplit(ref$data_urls, "|", fixed = TRUE), function(v) {
+  v <- trimws(v)
+  v <- v[nzchar(v) & !grepl("datadryad\\.org/review/?$", v)]
+  v <- ifelse(grepl("^http", v), v,
+       ifelse(grepl("^[0-9]", v), paste0("https://doi.org/", v), paste0("https://", v)))
+  paste(v, collapse = " | ")
+}, character(1))
+
 ref$z <- ref$est / ref$se
 ref   <- ref[order(ref$n), ]
 
