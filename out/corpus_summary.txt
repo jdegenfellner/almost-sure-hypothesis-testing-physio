@@ -1,0 +1,52 @@
+=== 266 musculoskeletal RCTs (Bleakley et al. 2025, open supplement) ===
+usable trials: 256
+total n: median 42.5, IQR 30 to 61, range 14 to 540
+|SMD|: median 0.55, IQR 0.25 to 1.03
+
+--- how many of the 256 comparisons are rejected ---
+fixed alpha = 0.05 : 127 (50%)
+fixed alpha = 0.005:  67 (26%)
+almost sure p = 1.1:  97 (38%)
+almost sure p = 1.2:  82 (32%)
+almost sure p = 1.5:  69 (27%)
+almost sure p = 2  :  47 (18%)
+
+--- of the 127 significant at 0.05, how many survive ---
+p = 1.1:  97 of 127 (76%)
+p = 1.2:  82 of 127 (65%)
+p = 1.5:  69 of 127 (54%)
+p = 2  :  47 of 127 (37%)
+critical exponent p* of these: median 1.66, IQR 1.13 to 2.60
+with p* <= 1 (survive under NO admissible almost sure rule): 25 of 127 (20%)
+
+--- P values of the comparisons the rule removes vs keeps ---
+p = 1.1: removed median P 0.0331 (n=30), kept median P 0.00045 (n=97)
+p = 1.2: removed median P 0.0265 (n=45), kept median P 0.00029 (n=82)
+p = 1.5: removed median P 0.0222 (n=58), kept median P 0.00007 (n=69)
+p = 2  : removed median P 0.0151 (n=80), kept median P 0.00000 (n=47)
+
+--- survival by trial size (of those significant at 0.05, p = 1.2) ---
+n <30    : 24 of 34 survive (71%)
+n 30-50  : 31 of 48 survive (65%)
+n 50-100 : 21 of 32 survive (66%)
+n >100   :  6 of 13 survive (46%)
+
+--- is the almost sure rule just a fixed lower alpha? ---
+p = 1.1 vs fixed 0.005: identical verdict in 226 of 256 (88%)
+p = 1.2 vs fixed 0.005: identical verdict in 239 of 256 (93%)
+p = 1.5 vs fixed 0.005: identical verdict in 248 of 256 (97%)
+p = 2   vs fixed 0.005: identical verdict in 236 of 256 (92%)
+
+Where the two rules disagree, the almost sure rule is the stricter one
+in the larger trials and the more permissive one in the smallest:
+p = 1.1: 30 disagreements, median n where almost sure is stricter -, more permissive 30
+p = 1.2: 17 disagreements, median n where almost sure is stricter 125, more permissive 28
+p = 1.5: 8 disagreements, median n where almost sure is stricter 125, more permissive 21
+p = 2  : 20 disagreements, median n where almost sure is stricter 51, more permissive -
+
+--- mean level over the corpus size distribution (bounded sizes) ---
+fixed 0.05         : 0.05000  ->  50.0 per 1000 true nulls
+almost sure p = 1.1: 0.01752  ->  17.5 per 1000 true nulls (2.9 times slower)
+almost sure p = 1.2: 0.01235  ->  12.3 per 1000 true nulls (4.0 times slower)
+almost sure p = 1.5: 0.00439  ->   4.4 per 1000 true nulls (11.4 times slower)
+almost sure p = 2  : 0.00082  ->   0.8 per 1000 true nulls (61.2 times slower)

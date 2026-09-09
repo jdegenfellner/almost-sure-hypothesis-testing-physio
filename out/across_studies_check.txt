@@ -1,0 +1,36 @@
+A field of 20000 true-null trials, each tested once; 400 independent fields.
+Sizes n_k = ceiling(4* k) where they grow.
+
+--- linear growth, almost sure p=1.2 ---
+  theoretical expectation  sum_k alpha_k = 0.929
+  simulated mean count                   = 0.927
+  simulated median / max                 = 1 / 6
+  fields with zero false positives       = 38%
+
+--- linear growth, fixed 0.05 ---
+  theoretical expectation  sum_k alpha_k = 1000.000
+  simulated mean count                   = 1001.555
+  simulated median / max                 = 1000 / 1120
+  fields with zero false positives       = 0%
+
+--- no growth (all n=40), p=1.2 ---
+  theoretical expectation  sum_k alpha_k = 239.088
+  simulated mean count                   = 240.012
+  simulated median / max                 = 240 / 281
+  fields with zero false positives       = 0%
+
+Series limit for the growing-size case, as K -> infinity:
+  sum_{k=1}^inf (C k)^-p = C^-p * zeta(p) = 1.059  (p = 1.2, C = 4)
+  partial sum to K = 20000 is 0.929, so the horizon is long enough to see it settle.
+
+Growth of the cumulative count with K, almost sure rule, linear sizes:
+  K =   100 : expected total = 0.683
+  K =  1000 : expected total = 0.821
+  K =  5000 : expected total = 0.887
+  K = 20000 : expected total = 0.929
+
+Same for the fixed level, which is 0.05*K and diverges:
+  K =   100 : expected total = 5
+  K =  1000 : expected total = 50
+  K =  5000 : expected total = 250
+  K = 20000 : expected total = 1000

@@ -1,0 +1,55 @@
+
+Cui 2023, digital vs conventional physiotherapy
+  ODI change, 8 weeks (primary)
+  n = 140   estimate = -0.550   SE = -   |z| = 0.82   P = 0.412
+  critical exponent p* = 0.18  -> survives NO admissible rule
+  bars on |z|: classical 1.96 | p=1.1: 2.85 | p=1.2: 3.00 | p=1.5: 3.43 | p=2: 4.05
+  verdicts:    - | - | - | - | -
+
+Cui 2023, digital vs conventional physiotherapy
+  difference in dropout (secondary)
+  n = 140   estimate = 0.186   SE = 0.073   |z| = 2.54   P = 0.019
+  critical exponent p* = 0.80  -> survives NO admissible rule
+  bars on |z|: classical 1.96 | p=1.1: 2.85 | p=1.2: 3.00 | p=1.5: 3.43 | p=2: 4.05
+  verdicts:    reject | - | - | - | -
+
+UK BEAM 2004, exercise vs best care
+  Roland Morris, 3 months (primary)
+  n = 1334   estimate = 1.400   SE = 0.383   |z| = 3.66   P = 0.0002536
+  critical exponent p* = 1.15  -> survives some admissible rule
+  bars on |z|: classical 1.96 | p=1.1: 3.56 | p=1.2: 3.75 | p=1.5: 4.26 | p=2: 5.00
+  verdicts:    reject | reject | - | - | -
+
+UK BEAM 2004, manipulation vs best care
+  Roland Morris, 12 months (primary)
+  n = 1334   estimate = 1.000   SE = 0.408   |z| = 2.45   P = 0.01429
+  critical exponent p* = 0.59  -> survives NO admissible rule
+  bars on |z|: classical 1.96 | p=1.1: 3.56 | p=1.2: 3.75 | p=1.5: 4.26 | p=2: 5.00
+  verdicts:    reject | - | - | - | -
+
+UK BEAM 2004, manipulation then exercise vs best care
+  Roland Morris, 3 months (primary)
+  n = 1334   estimate = 1.900   SE = 0.357   |z| = 5.32   P = 1.038e-07
+  critical exponent p* = 2.23  -> survives some admissible rule
+  bars on |z|: classical 1.96 | p=1.1: 3.56 | p=1.2: 3.75 | p=1.5: 4.26 | p=2: 5.00
+  verdicts:    reject | reject | reject | reject | reject
+
+PhysioDirect 2013, telephone vs usual care
+  SF-36v2 physical component, 6 months (primary)
+  n = 2249   estimate = -0.010   SE = 0.406   |z| = 0.02   P = 0.9803
+  critical exponent p* = 0.00  -> survives NO admissible rule
+  bars on |z|: classical 1.96 | p=1.1: 3.71 | p=1.2: 3.90 | p=1.5: 4.43 | p=2: 5.20
+  verdicts:    - | - | - | - | -
+
+PhysioDirect 2013, telephone vs usual care
+  overall satisfaction, 6 months (secondary)
+  n = 2249   estimate = -3.800   SE = 1.786   |z| = 2.13   P = 0.03334
+  critical exponent p* = 0.44  -> survives NO admissible rule
+  bars on |z|: classical 1.96 | p=1.1: 3.71 | p=1.2: 3.90 | p=1.5: 4.43 | p=2: 5.20
+  verdicts:    reject | - | - | - | -
+
+
+The two large trials show the other edge of the rule: at n = 1334 and
+n = 2249 the classical bar certifies differences of one point on a
+24-point disability scale and 3.8 percentage points of satisfaction,
+while the almost sure bar, which has risen to |z| ~ 3.6 to 4.0, does not.

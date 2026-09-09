@@ -1,0 +1,47 @@
+=== 21 trials with openly deposited individual participant data ===
+total n: median 39, range 16 to 281
+
+PMCID            n        z         P      p*  .05   .005  1.1   1.2   1.5   2    
+PMC11945196     16    -2.48     0.026    1.31  yes   -     yes   yes   -     -    
+PMC4891923      18    -2.25      0.04    1.11  yes   -     yes   -     -     -    
+PMC13257960     20    -3.21    0.0058    1.72  yes   -     yes   yes   yes   -    
+PMC13085461     20    -4.61   0.00034    2.67  yes   yes   yes   yes   yes   yes  
+PMC11164989     23    -2.20      0.04    1.03  yes   -     -     -     -     -    
+PMC11171874     26     4.20    0.0004    2.40  yes   yes   yes   yes   yes   yes  
+PMC13092435     28    -0.73      0.47    0.23  -     -     -     -     -     -    
+PMC12111718     30    -3.61    0.0014    1.94  yes   yes   yes   yes   yes   -    
+PMC13140343     36     1.47      0.15    0.53  -     -     -     -     -     -    
+PMC4573757      37    -2.29     0.029    0.98  yes   -     -     -     -     -    
+PMC10809978     39     0.42      0.68    0.11  -     -     -     -     -     -    
+PMC12942207     40     2.98    0.0053    1.42  yes   -     yes   yes   -     -    
+PMC11829627     50    -0.08      0.93    0.02  -     -     -     -     -     -    
+PMC6886967      57     0.79      0.43    0.21  -     -     -     -     -     -    
+PMC11944689     63     0.42      0.67    0.10  -     -     -     -     -     -    
+PMC4880881      69    -0.20      0.84    0.04  -     -     -     -     -     -    
+PMC8318721     112    -5.90   4.1e-08    3.60  yes   yes   yes   yes   yes   yes  
+PMC6733445     214     0.53      0.62    0.09  -     -     -     -     -     -    
+PMC8198819     236     0.10      0.92    0.02  -     -     -     -     -     -    
+PMC12821712    276     0.50      0.62    0.09  -     -     -     -     -     -    
+PMC8830646     281    -4.12     5e-05    1.76  yes   yes   yes   yes   yes   -    
+
+--- counts of rejected primary outcomes out of 21 ---
+fixed alpha = 0.05 : 11
+fixed alpha = 0.005: 5
+almost sure p = 1.1: 9
+almost sure p = 1.2: 8
+almost sure p = 1.5: 6
+almost sure p = 2  : 3
+
+--- of the 11 findings significant at 0.05 ---
+survive at p = 1.1: 9 of 11 (82%)
+survive at p = 1.2: 8 of 11 (73%)
+survive at p = 1.5: 6 of 11 (55%)
+survive at p = 2  : 3 of 11 (27%)
+critical exponent p* of these: median 1.72, range 0.98 to 3.60
+number with p* <= 1 (survive under NO admissible rule): 1 of 11
+
+--- agreement between the almost sure rule and a fixed 0.005 ---
+p = 1.1: identical verdict in 17 of 21 trials (81%)
+p = 1.2: identical verdict in 18 of 21 trials (86%)
+p = 1.5: identical verdict in 20 of 21 trials (95%)
+p = 2  : identical verdict in 19 of 21 trials (90%)

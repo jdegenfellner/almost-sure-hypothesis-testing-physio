@@ -1,0 +1,27 @@
+# Third-party supplement, fetched by R/04_corpus_msk.R rather than redistributed
+# (Bleakley et al. 2025 is CC BY-NC-ND; the script downloads it on first run)
+data/bleakley2025_S3.xlsx
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.bbl
+*.blg
+
+# R session artefacts
+.Rhistory
+.RData
+.Rapp.history
+Rplots.pdf
+
+# macOS
+.DS_Store
+
+# Supporting note on the across-studies Borel-Cantelli argument.
+# Local only: it is not part of the manuscript or of the code archive.
+notes/

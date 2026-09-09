@@ -1,0 +1,10 @@
+Crossings of the fixed line |Z_n| > 1.96, horizon n = 10^6, 150 paths
+
+expected number of n with |Z_n| > 1.96 : 50000  (= 0.05 n)
+realised, mean over 150 paths          : 54061
+realised, median                       : 1709
+realised, range                        : 0 to 725201
+paths with NO crossing at all          : 30 of 150
+separate excursions above the line     : median 26, range 0 to 956
+
+the single path of the first version (seed 1): 0 crossings, max |Z_n| = 1.56
