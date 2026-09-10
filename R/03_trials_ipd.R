@@ -4,7 +4,7 @@
 # PARTICIPANT DATA are openly deposited.
 #
 # For each trial one pre-specified reference analysis of the primary outcome
-# (see data/ipd_reference_specs.csv and 00_export_ipd_reference_specs.R) gives
+# (see data/ipd_reference_specs.csv) gives
 # an estimate, a standard error and a two-sided P value.  The rule is applied
 # on the P value scale: reject when P < alpha_n = n^{-p}.  We also report the
 # critical exponent p* = log(1/P)/log(n), the largest p at which the finding

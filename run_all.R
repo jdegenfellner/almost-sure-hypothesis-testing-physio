@@ -1,15 +1,9 @@
 # ---------------------------------------------------------------------------
 # run_all.R -- reproduces every number, table and figure of revision 1.
 # Run from the repository root:  Rscript run_all.R
-#
-# Step 00 refits the 21 trials from their raw deposits and needs those files;
-# set IPD_DIR to where they are held.  Its output, data/ipd_reference_specs.csv,
-# is committed here, so every later step runs without it and reproduces every
-# number, table and figure.
 # ---------------------------------------------------------------------------
 
 steps <- c(
-  "R/00_export_ipd_reference_specs.R",  # optional; refits the IPD from raw deposits
   "R/09_thresholds.R",                  # Table 1
   "R/06_lil_figure.R",                  # Figure 1
   "R/asht_simulation.R",                # Figure 2 (slow: 150 paths to n = 1e6)
@@ -24,9 +18,6 @@ steps <- c(
 
 for (s in steps) {
   message("\n==== ", s, " ====")
-  ok <- tryCatch({ source(s, echo = FALSE); TRUE },
-                 error = function(e) { message("SKIPPED (expected unless the raw deposits are present): ",
-                                    conditionMessage(e)); FALSE })
-  if (!ok && !grepl("00_export", s)) stop("failed at ", s)
+  source(s, echo = FALSE)
 }
 message("\nAll steps complete. See out/ and figures/.")
