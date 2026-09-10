@@ -19,7 +19,7 @@ PS     <- c(1.1, 1.2, 1.5, 2)         # decay exponents reported throughout
 DELTAS <- c(0.2, 0.5, 0.8)            # Cohen's small / medium / large SMD
 
 # --- 1. exact size and power at fixed n ------------------------------------
-grid <- expand.grid(n = c(20, 40, 100, 140, 200, 500, 1000, 4000),
+grid <- expand.grid(n = c(20, 40, 100, 140, 200, 500, 1000, 2000, 4000),
                     delta = DELTAS)
 grid$power_fixed <- power_fixed(grid$delta, grid$n)
 for (p in PS) {
